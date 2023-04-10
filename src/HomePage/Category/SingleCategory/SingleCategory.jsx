@@ -5,7 +5,7 @@ const SingleCategory = (prpos) => {
     return (
         <div className='p-12 bg-sky-50 singles'>
             <img src={img} alt="" />
-            <h1>{title}</h1>
+            <h1 className='font-bold my-1'>{title}</h1>
             <p>{subtitle}</p>
         </div>
     );

@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <nav className='flex justify-between mx-8 items-center pt-3 header'>
-            <h1 className='font-bold text-3xl banner'>BengaLJobs</h1>
+            <h1 className='font-bold text-3xl banner'>Ben<span className='text-green-600'>gaL</span>Jobs</h1>
             <div className='anchor'>
                 <Link to="/">Home</Link>
                 <Link to="/statistics" className='text-indigo-500'>Statistics</Link>

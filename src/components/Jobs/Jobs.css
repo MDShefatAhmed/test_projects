@@ -1,0 +1,10 @@
+.job-container{
+    border: 1px solid gold;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .jobs-container{
+        
+    }
+}
