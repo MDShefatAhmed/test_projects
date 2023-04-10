@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 const Header = () => {
     return (
-        <nav className='flex justify-between mx-8 items-center mt-3 header'>
+        <nav className='flex justify-between mx-8 items-center pt-3 header'>
             <h1 className='font-bold text-3xl banner'>BengaLJobs</h1>
             <div className='anchor'>
                 <Link to="/">Home</Link>
