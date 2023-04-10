@@ -11,8 +11,8 @@ const Job = (prpos) => {
                 <p className='p-2 border border-sky-300 rounded'>{job_contract}</p>
             </div>
             <div className='flex gap-5'>
-                <p><i class="fa-solid fa-location-dot"></i> {location}</p>
-                <p><i class="fa-solid fa-dollar-sign border border-neutral-600 p-1 rounded-full"></i> {salary}</p>
+                <p><i className="fa-solid fa-location-dot"></i> {location}</p>
+                <p><i className="fa-solid fa-dollar-sign border border-neutral-600 p-1 rounded-full"></i> {salary}</p>
             </div>
             <button className='bg-sky-300 p-3 rounded mt-3 text-white'>View Details</button>
         </div>

@@ -3,11 +3,11 @@ import './Jobs.css';
 import Job from './Job';
 const Jobs = () => {
     const [jobs, setJobs] = useState([]);
-    useEffect(() =>{
+    useEffect(() => {
         fetch('jobs.json')
-        .then(res => res.json())
-        .then(data => setJobs(data))
-    }, [])
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, []);
     return (
         <div>
             <div className='text-center my-10'>
@@ -16,10 +16,10 @@ const Jobs = () => {
             </div>
             <div className='jobs-container md:grid grid-cols-2'>
                 {
-                   jobs.map(job => <Job
-                   key={job.id}
-                   job={job}
-                   ></Job>) 
+                    jobs.map(job => <Job
+                        key={job.id}
+                        job={job}
+                    ></Job>)
                 }
             </div>
         </div>
@@ -27,3 +27,6 @@ const Jobs = () => {
 };
 
 export default Jobs;
+
+
+{/*  */ }
