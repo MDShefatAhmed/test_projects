@@ -9,8 +9,8 @@ const Jobs = () => {
         .then(data => setJobs(data))
     }, [])
     return (
-        <div className='my-5'>
-            <div className='text-center'>
+        <div>
+            <div className='text-center my-10'>
                 <h1 className='font-bold text-3xl'>Featured Jobs</h1>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>

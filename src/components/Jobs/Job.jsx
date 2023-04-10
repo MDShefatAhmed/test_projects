@@ -1,6 +1,5 @@
 import React from 'react';
 const Job = (prpos) => {
-    console.log(prpos.job)
     const { img, title, salary, name, job_condition, job_contract, location } = prpos.job;
     return (
         <div className='job-container mx-5 mt-5 ps-20 p-10 bg-sky-50'>
@@ -15,7 +14,7 @@ const Job = (prpos) => {
                 <p><i class="fa-solid fa-location-dot"></i> {location}</p>
                 <p><i class="fa-solid fa-dollar-sign border border-neutral-600 p-1 rounded-full"></i> {salary}</p>
             </div>
-            <button className='bg-sky-400 p-3 rounded mt-3'>View Details</button>
+            <button className='bg-sky-300 p-3 rounded mt-3 text-white'>View Details</button>
         </div>
     );
 };
