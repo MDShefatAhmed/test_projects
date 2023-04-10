@@ -1,0 +1,27 @@
+.anchor{
+    display: flex;
+    gap: 20px;
+}
+.header{
+    position: relative;
+}
+@media screen and (max-width: 576px){
+    .header{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .header a{
+        font-size: smaller;
+    }
+    .banner{
+        font-size: 30px;
+    }
+    .btn{
+        padding: 8px;
+        font-size: smaller;
+    }
+    .anchor{
+        display: flex;
+        gap: 5px;
+    }
+}
