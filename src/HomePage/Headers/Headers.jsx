@@ -9,7 +9,7 @@ const Headers = () => {
         .then(data => setBannerImg(data))
     }, [])
     return (
-        <div className='bg-sky-50 mt-3'>
+        <div className='bg-indigo-50 mt-3'>
             <div className='md:flex items-center mx-24 '>
                 <div className='banner-content'>
                     <p className='text-5xl   font-semibold mb-5'>One Step <br /> Closer To Your <br /> <span className='text-indigo-400'>Dream Job</span></p>
