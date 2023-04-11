@@ -1,13 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './Jobs.css';
 import Job from './Job';
-const Jobs = () => {
-    const [jobs, setJobs] = useState([]);
-    useEffect(() => {
-        fetch('jobs.json')
-            .then(res => res.json())
-            .then(data => setJobs(data))
-    }, []);
+const Jobs = ({jobs}) => {
     return (
         <div>
             <div className='text-center my-10'>
@@ -16,12 +9,13 @@ const Jobs = () => {
             </div>
             <div className='jobs-container md:grid grid-cols-2'>
                 {
-                    jobs.map(job => <Job
-                        key={job.id}
+                    jobs.slice(0, 4).map(job => <Job
                         job={job}
+                        key={job.id}
                     ></Job>)
                 }
             </div>
+            <button className='bg-sky-300 p-5' id="show-more">Show More</button>
         </div>
     );
 };

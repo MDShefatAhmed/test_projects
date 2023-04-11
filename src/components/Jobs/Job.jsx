@@ -1,6 +1,7 @@
 import React from 'react';
 const Job = (prpos) => {
     const { img, title, salary, name, job_condition, job_contract, location } = prpos.job;
+    console.log(prpos)
     return (
         <div className='job-container mx-5 mt-5 ps-20 p-10 bg-sky-50'>
             <img src={img} alt="" />
