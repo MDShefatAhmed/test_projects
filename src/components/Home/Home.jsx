@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Headers></Headers>
             <Category></Category>
-            <Jobs jobs={jobs}></Jobs>
+            <Jobs></Jobs>
         </div>
     );
 };

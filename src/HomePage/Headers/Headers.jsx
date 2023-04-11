@@ -3,10 +3,10 @@ import './Headers.css';
 import Banner from './Banner';
 const Headers = () => {
     const [bannerImg, setBannerImg] = useState([]);
-    useEffect(() =>{
+    useEffect(() => {
         fetch('img.json')
-        .then(res => res.json())
-        .then(data => setBannerImg(data))
+            .then(res => res.json())
+            .then(data => setBannerImg(data))
     }, [])
     return (
         <div className='bg-indigo-50 mt-3'>
@@ -19,8 +19,8 @@ const Headers = () => {
                 <div>
                     {
                         bannerImg.map(banner => <Banner
-                        key={banner.id}
-                        banner={banner}
+                            key={banner.id}
+                            banner={banner}
                         ></Banner>)
                     }
                 </div>

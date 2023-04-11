@@ -22,14 +22,14 @@ const Jobs = () => {
             </div>
             <div className='jobs-container md:grid grid-cols-2'>
                 {
-                    jobs.slice(0,showMore ? 6 : 4).map(job => <Job
+                    jobs.slice(0, showMore ? 6 :4).map(job => <Job
                         job={job}
                         key={job.id}
                     ></Job>)
                 }
             </div>
             <div className='flex justify-center my-5'>
-            {hideButton ? null : <button onClick={handleButtonClick} className='bg-indigo-400 p-3 rounded-lg text-white center'>Show More</button>}
+            {hideButton ? null : <button  className='bg-indigo-400 p-3 rounded-lg text-white center' onClick={handleButtonClick}>Show More</button>}
             </div>
         </div>
     );
@@ -38,14 +38,8 @@ const Jobs = () => {
 export default Jobs;
 
 
-{/* 
-const [jobs , setJobs] = useState([]);
-    const [showMore , setShowMore] = useState(false);
-    
-    setJobs(jobs);  
-
-
-
-
-onClick={setShowMore}
-*/ }
+/**
+ *  
+ * 
+ * 
+ * */ 
