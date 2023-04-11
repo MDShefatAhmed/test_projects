@@ -34,9 +34,9 @@ const JobDetail = ({ detail }) => {
                     <p><span className='font-bold'><i className="fa-regular fa-envelope text-indigo-500"></i> Email:</span> {email}</p>
                     <p><span className='font-bold'> <i className="fa-solid fa-location-dot text-indigo-400"></i>Address:</span> {location}</p>
                 </div>
-                    <div className='bg-white'>
-                        <button className='bg-indigo-400 py-2 mt-3 text-white btn-apply-now'>Apply Now</button>
-                    </div>
+                <div className='bg-white'>
+                    <button className='bg-indigo-400 py-2 mt-3 text-white btn-apply-now'>Apply Now</button>
+                </div>
             </div>
         </div>
     );
