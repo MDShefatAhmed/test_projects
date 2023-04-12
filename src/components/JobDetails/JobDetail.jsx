@@ -1,7 +1,9 @@
 import React from 'react';
 import './Jobdetail.css';
-const JobDetail = ({ detail }) => {
-    const { job_description, job_responsibility, educational_requirements, experiences, salary, title, phone, email, location} = detail;
+import { Link } from 'react-router-dom';
+const JobDetail = ({ detail, handleApplyNow }) => {
+    const { job_description, job_responsibility, educational_requirements, experiences, salary, title, phone, email, location } = detail;
+    
     return (
         <div className='JobDetail-container mt-8'>
             <div>
@@ -35,7 +37,7 @@ const JobDetail = ({ detail }) => {
                     <p><span className='font-bold'> <i className="fa-solid fa-location-dot text-indigo-400"></i>Address:</span> {location}</p>
                 </div>
                 <div className='bg-white'>
-                    <button className='bg-indigo-400 py-2 mt-3 text-white btn-apply-now'>Apply Now</button>
+                    <button onClick={() => handleApplyNow(detail)} className='bg-indigo-400 py-2 mt-3 text-white btn-apply-now'>Apply Now</button>
                 </div>
             </div>
         </div>

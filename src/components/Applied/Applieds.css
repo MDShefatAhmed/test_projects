@@ -1,0 +1,16 @@
+.applied-job-container{
+    width: fit-content;
+    margin-left: 5%;
+    border: 1px solid indigo;
+    
+}
+.btn-apply-jobs{
+    margin-left: 500px;
+}
+.apply-job-img{
+    background-color: rgba(169, 169, 169, 0.253);
+}
+.dropdown{
+    margin-left: 90%;
+    background: #F4F4F4;
+}

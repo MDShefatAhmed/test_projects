@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+
+import { addToDb } from '../../utilities/fakedb';
 import JobDetail from './JobDetail';
 
 const JobDetails = () => {
@@ -15,6 +17,9 @@ const JobDetails = () => {
     if(singleData){
         myData.push(singleData)
     }
+    const handleApplyNow = (Detail) =>{
+        addToDb(Detail.id)
+    }
     return (
         <div>
             <div className='bg-indigo-50 mt-3 py-8'>
@@ -25,6 +30,7 @@ const JobDetails = () => {
                     myData.map(detail => <JobDetail
                     detail={detail}
                     key={detail.id}
+                    handleApplyNow={handleApplyNow}
                     ></JobDetail>)
                 }
             </div>
